@@ -9,6 +9,7 @@
             rel="stylesheet">
         <meta charset="utf-8" />
         <meta name="description" content="Web studio services" />
+        <meta name="viewport" content="width=devise-width, initial-scale=1.0"/>
         <title>Web Studio</title>
         <link href="./css/styles.css" rel="stylesheet"/>
     </head>
@@ -18,18 +19,46 @@
             <div class="container header-div">
             <nav class="nav">
                 <a class="logo link" href="./index.html">Web<span class="span">Studio</span></a>
+                <div class="disappearing-list">
                 <ul class="list header-ul-l">
                     <li><a class="list-menu-header link current" href="./index.html">Studio</a></li>
                     <li><a class="list-menu-header link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="list-menu-header link" href="">Contacts</a></li>
                 </ul>
+                </div>
             </nav>
+            <div class="disappearing-list">
             <address class="address">
                 <ul class="list header-ul-ll">
                     <li><a class="list-contacts-header link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="list-contacts-header link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                </ul>
+                </ul>   
             </address>
+            </div>
+            <button .js-open-menu type="button"> 
+            <svg class="mobile-menu" width="64" height="64">
+                <use href="./images/icons.svg#icon-home"></use>
+            </svg>
+            </button>
+
+            <div .js-menu-container class="mobile-version is-open">
+                <button type="button" .js-close-menu class="modal-close">
+                    <svg class="close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <ul class="list header-ul-l">
+                    <li><a class="list-menu-header link" href="./index.html">Studio</a></li>
+                    <li><a class="list-menu-header link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="list-menu-header link" href="">Contacts</a></li>
+                </ul>
+                <address class="address">
+                    <ul class="list header-ul-ll">
+                        <li><a class="list-contacts-header link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="list-contacts-header link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+            </div>
             </div>
         </header>
 
@@ -429,5 +458,6 @@
             </div>
             </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
