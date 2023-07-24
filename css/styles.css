@@ -1008,10 +1008,23 @@ header .list{
     .header-ul-l{
         margin-top: 80px;
         flex-grow: 1;
+        display: block;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1, 11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
     }
 
     .address{
         margin-left: 0;
+    }
+
+    .header-ul-ll{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 48px;
     }
 
     .tel{
@@ -1023,11 +1036,30 @@ header .list{
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     }
 
     .tel:hover,
     .tel:focus {
         color: var(--text-header-hover);
+    }
+
+    .email{
+        color: var(--text-header-contacts-normal);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+    }
+
+    .email:hover,
+    .email:focus {
+        color: var(--text-header-hover);
+    }
+
+    .list-icons-mobile-menu{
+        display: flex;
+        justify-content: center;
     }
 
     .list-menu-header{
@@ -1048,20 +1080,6 @@ header .list{
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
-    }
-
-    .header-ul-l {
-        display: block;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1, 11;
-        letter-spacing: 0.72px;
-        text-transform: capitalize;
-    }
-
-    .header-ul-ll {
-        display: block;
     }
 
     .disappearing-list {
