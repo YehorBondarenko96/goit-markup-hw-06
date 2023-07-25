@@ -26,6 +26,12 @@
     --tytles-h-ll: #2e2f42;
 }
 
+@media (min-resolution:192dpi){
+    .fifth-section{
+        background-image: url(../images/dark-bg_2@.jpg);
+    }
+}
+
 *{
     box-sizing: border-box;
 }
@@ -211,9 +217,10 @@ header .list{
 }
 
 .open-menu{
-    margin: 24px 16px 24px auto;
+    margin: 24px 0 24px auto;
     background-color: transparent;
     border: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .open-menu:focus,
@@ -1269,5 +1276,14 @@ header .list{
     .footer-button{
         position: static;
         margin: 16px auto
+    }
+
+
+
+    .modal-window{
+        max-width: 392px;
+        width: 100%;
+        max-height: 615px;
+        height: 100%;
     }
 }
