@@ -978,6 +978,10 @@ header .list{
 
 
 @media (max-width:428px) {
+    .container{
+        max-width: 350px;
+    }
+
     .mobile-version {
         min-width: 100%;
         min-height: 100%;
@@ -1005,6 +1009,16 @@ header .list{
         overflow: hidden;
     }
 
+    .header-div{
+        width: 100%;
+        max-width: 428px;
+        padding: 0 16px;
+    }
+
+    .open-menu{
+        margin-right: 0;
+    }
+
     .header-ul-l{
         margin-top: 80px;
         flex-grow: 1;
@@ -1027,9 +1041,14 @@ header .list{
         margin-bottom: 48px;
     }
 
+    .background-icons-mobile-menu{
+        width: 40px;
+        height: 40px;
+    }
+
     .tel{
         color: var(--text-header-contacts-normal);
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.72px;
@@ -1059,7 +1078,10 @@ header .list{
 
     .list-icons-mobile-menu{
         display: flex;
-        justify-content: center;
+    }
+
+    .list-contacts-header {
+        padding: 0;
     }
 
     .list-menu-header{
@@ -1069,11 +1091,6 @@ header .list{
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.72px;
-    }
-
-    .list-contacts-header{
-        padding: 0;
-        margin-bottom: 40px;
     }
 
     .is-open {
@@ -1100,9 +1117,7 @@ header .list{
     }
 
     .title-first-section{
-            font-size: 36px;
-            margin-left: 54px;
-            margin-right: 54px;
+            font-size: 34px;
     }
 
 
@@ -1177,12 +1192,12 @@ header .list{
 
     .list-fourth-section{
         margin: 0 auto;
-        width: 100%;
+        width: 264px;
         margin-top: 72px;
     }
 
     .img-fourth-section{
-        padding: 0 auto;
+        margin: 0 auto;
     }
 
     .fifth-section{
@@ -1205,6 +1220,8 @@ header .list{
 
     .all-footer{
         display: block;
+        width: 100%;
+        max-width: 428px;
     }
 
     .logo-p{
