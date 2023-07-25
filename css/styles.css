@@ -1349,17 +1349,10 @@ header .list {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        max-width: 261px;
-        width: 100%;
-    }
-
-    .menu-header{
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .header-ul-l>li:not(:last-child){
-        margin-right: calc((100% - 67px*3)/2);
+        margin-right: 40px;
     }
 
     .contacts{
@@ -1458,10 +1451,6 @@ header .list {
         margin-right: 0;
     }
 
-    .footer-p{
-        min-width: 264px;
-    }
-
     .second-section-footer{
         margin-left: 24px;
     }
@@ -1469,4 +1458,9 @@ header .list {
     .feedback{
         margin-left: 0;
     }
+
+    .form-message-footer{
+        width: 100%;
+    }
+    
 }
