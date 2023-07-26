@@ -1239,6 +1239,14 @@ header .list {
         max-width: 428px;
     }
 
+    .all-version{
+        display: block;
+    }
+
+    .logo-p-social-media{
+        display: block;
+    }
+
     .logo-p {
         text-align: center;
         padding-bottom: 18px;
@@ -1317,19 +1325,15 @@ header .list {
                     max-width: 100%;
                     position: relative;
                 }
-        
-                .logo {
-                    margin-right: 50%;
-                }
-        
-                .menu-header {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    height: 72px;
-                    width: 34%;
-                }
+
+        .menu-header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 72px;
+        width: 34%;
+        }
         
                 .header-ul-l {
                     position: relative;
@@ -1352,13 +1356,8 @@ header .list {
                     position: absolute;
                     left: 100%;
                     transform: translateX(-70%);
-                }
-        
-                .contacts {
-                    margin-top: 16px;
-                    margin-bottom: 16px;
-                    margin-left: auto;
-                }
+                }      
+                
 
         .list-icons-llll-section {
             gap: calc((100% - 24px - 40px*4)/3);
@@ -1424,6 +1423,18 @@ header .list {
         line-height: 1.17;
         letter-spacing: 0.48px;
     }
+
+        .logo {
+            margin-right: 50%;
+        }
+    
+        
+    
+        .contacts {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            margin-left: auto;
+        }
 
 
 .first-section{
@@ -1574,18 +1585,27 @@ header .list {
         height: 100%;
     }
 
+    .menu-header {
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        }
+    
+        
+
     .logo{
         margin-right: 0;
     }
 
-    .menu-header {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 72px;
-        width: 34%;
-        }
-
+    .header-ul-l>li {
+        left: 35%;
+        transform: translateX(-60%);
+    }
+    
+    .header-ul-l>li:last-child {
+        left: 67%;
+        transform: translateX(-70%);
+    }
 
     .all-version{
         border: 2px solid red;
