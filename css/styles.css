@@ -112,6 +112,10 @@ button {
     display: flex;
 }
 
+.header-ul-l>li{
+    height: 100%;
+}
+
 .header-ul-ll {
     display: flex;
     align-items: center;
@@ -156,6 +160,7 @@ header .list {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
 }
 
 .list-menu-header:hover,
@@ -181,7 +186,6 @@ header .list {
     height: 4px;
     border-radius: 2px;
     background: #404BBF;
-    bottom: 0px;
     left: 0;
     bottom: -1px;
 }
@@ -1279,6 +1283,22 @@ header .list {
 }
 
 
+@media (min-width:428px){
+    .for-mobile-version {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+}
+
+
 
 @media (max-width:768px){
     header .list {
@@ -1318,26 +1338,11 @@ header .list {
 
 
 
-@media (min-width:428px) {
+@media (min-width:427px) and (max-width:768px) {
     .container {
         max-width: 582px;
         }
 
-    .for-mobile-version {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-
-    
-    
     .header-div{
         align-items: center;
         max-width: 100%;
@@ -1369,6 +1374,10 @@ header .list {
 
     .list-contacts-header{
         padding: 0;
+    }
+
+    .current::after{
+        bottom: -10px;
     }
 
 
@@ -1450,6 +1459,10 @@ header .list {
             overflow: hidden;
     }
 
+    .div-tablet-version{
+        width: 100%;
+    }
+
     .tablet-version{
         width: 45%;
     }
@@ -1485,4 +1498,20 @@ header .list {
             bottom: 0;
             left: 0;
         }
+}
+
+
+@media (max-width:428px) or (min-width:768px) {
+    .div-tablet-version{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 }
