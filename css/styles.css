@@ -160,7 +160,6 @@ header .list {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    height: 100%;
 }
 
 .list-menu-header:hover,
@@ -1349,19 +1348,51 @@ header .list {
         position: relative;
     }
 
-    .header-ul-l{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    .logo{
+        margin-right: 50%;
     }
 
+    .menu-header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 72px;
+        width: 34%;
+    }
+
+        .header-ul-l {
+            position: relative;
+        }
+
+    .header-ul-l>li:first-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateX(-30%);
+    }
+    
+    .header-ul-l>li {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-60%);
+    }
+    
+    .header-ul-l>li:last-child {
+        position: absolute;
+        left: 100%;
+        transform: translateX(-70%);
+    }
+
+
     .header-ul-l>li:not(:last-child){
-        margin-right: 40px;
+        
     }
 
     .contacts{
-        margin:16px 16px 16px auto;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
     }
 
     .header-ul-ll{
@@ -1374,10 +1405,9 @@ header .list {
 
     .list-contacts-header{
         padding: 0;
-    }
-
-    .current::after{
-        bottom: -10px;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.48px;
     }
 
 
