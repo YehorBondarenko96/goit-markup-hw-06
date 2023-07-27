@@ -1608,8 +1608,6 @@ header .list {
     }
 
     .all-version{
-        border: 2px solid red;
-        position: relative;
         width: 100%;
     }
 
@@ -1618,21 +1616,27 @@ header .list {
     }
 
     .logo-p-footer{
-        margin-right: 0;
-    }
-
-    .footer-p{
+        margin-right: 120px;
     }
 
     .second-section-footer{
+        margin-right: 5px;
     }
 
     .feedback{
         margin-left:auto;
         margin-right: 205px;
-        border: 2px solid green;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:956px){
+    .form-message-footer{
+        width: 180px;
     }
 
-    .form-message-footer{
+    .logo-p-footer{
+        margin-right: 30px;
     }
 }
