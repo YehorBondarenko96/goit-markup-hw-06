@@ -988,6 +988,10 @@ header .list {
 
 
 @media (max-width:428px) {
+    .container {
+            max-width: 350px;
+        }
+
     .mobile-version {
         min-width: 100%;
         min-height: 100%;
@@ -1318,15 +1322,17 @@ header .list {
     .item-portfolio-ll-list{
         width: 100%;
     }
+
+    .img-overlay-portfolio>img{
+        min-width: 100%;
+        object-fit: cover;
+        width: inherit;
+    }
 }
 
 
 
 @media (min-width:429px){
-    .container {
-            max-width: 350px;
-        }
-
     .for-mobile-version {
             position: absolute;
             width: 1px;
