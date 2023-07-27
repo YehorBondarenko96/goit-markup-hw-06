@@ -929,6 +929,12 @@ header .list {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.img-overlay-portfolio>img {
+    min-width: 100%;
+    object-fit: cover;
+    width: inherit;
+}
+
 .img-overlay-portfolio {
     position: relative;
     overflow: hidden;
@@ -1322,12 +1328,6 @@ header .list {
     .item-portfolio-ll-list{
         width: 100%;
     }
-
-    .img-overlay-portfolio>img{
-        min-width: 100%;
-        object-fit: cover;
-        width: inherit;
-    }
 }
 
 
@@ -1598,6 +1598,28 @@ header .list {
         .footer-button {
             bottom: 0;
             left: 0;
+        }
+        
+        
+
+        .portfolio-container{
+            min-width: 100%;
+        }
+
+        .portfolio-l-list{
+            gap: calc((100% - 126px*5)/4);
+        }
+
+        .item-portfolio-ll-list {
+            flex-basis: calc((100% - 24px) / 2);
+        }
+}
+
+
+
+@media (min-width:429px) and (max-width:465px){
+    .first-button {
+            padding: 6px 12px;
         }
 }
 
