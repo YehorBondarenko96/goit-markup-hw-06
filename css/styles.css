@@ -26,12 +26,6 @@
     --tytles-h-ll: #2e2f42;
 }
 
-@media (min-resolution:192dpi) {
-    .first-section {
-        background-image: url(../images/dark-bg_2@.jpg);
-    }
-}
-
 * {
     box-sizing: border-box;
 }
@@ -229,12 +223,9 @@ header .list {
 
 
 
-.first-section {
-    background-color: var(--title-background);
+.first-section { 
     text-align: center;
-    padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-color: var(--title-background);
     background-position: 50% 50%;
     max-width: 1440px;
     width: 100%;
@@ -1145,8 +1136,18 @@ header .list {
     }
 
     .first-section {
-        max-width: 100%;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/bg_mobile.jpg);
     }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution:192dpi),
+        (min-resolution: 2dppx) {
+            .first-section {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)), url(../images/bg_mobile_2@.jpg);
+            }
+        }
 
     .title-first-section {
         font-size: 34px;
@@ -1371,6 +1372,10 @@ header .list {
         gap: 0;
     }
 
+    .first-section {
+        max-width: 100%;
+    }
+
     .second-section {
         padding: 96px 0;
     }
@@ -1438,7 +1443,17 @@ header .list {
 
 
 .first-section{
-    max-width: 100%;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/bg_tablet.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution:192dpi),
+(min-resolution: 2dppx) {
+    .first-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/bg_tablet_2@.jpg);
+    }
 }
 
 
@@ -1607,6 +1622,21 @@ header .list {
         transform: translateX(-70%);
     }
 
+    .first-section {
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution:192dpi),
+        (min-resolution: 2dppx) {
+            .first-section {
+                    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                            rgba(46, 47, 66, 0.7)), url(../images/dark-bg_2@.jpg);
+            }
+        }
+
     .all-version{
         width: 100%;
     }
@@ -1639,4 +1669,10 @@ header .list {
     .logo-p-footer{
         margin-right: 30px;
     }
+}
+
+
+
+@media (max-width:1158px){
+
 }
