@@ -91,6 +91,7 @@ button {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
+        min-width: 100%;
 }
 
 .header-div {
@@ -227,8 +228,7 @@ header .list {
     text-align: center;
     background-color: var(--title-background);
     background-position: 50% 50%;
-    max-width: 1440px;
-    width: 100%;
+    min-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1307,7 +1307,7 @@ header .list {
 
 
 
-@media (min-width:428px){
+@media (min-width:429px){
     .for-mobile-version {
             position: absolute;
             width: 1px;
@@ -1321,11 +1321,15 @@ header .list {
             overflow: hidden;
         }
 
-                .header-div {
-                    align-items: center;
-                    max-width: 100%;
-                    position: relative;
-                }
+        .header{
+            min-width: 100%;
+        }
+
+        .header-div {
+        align-items: center;
+        width: 100%;
+            position: relative;
+        }
 
         .menu-header {
         position: absolute;
@@ -1374,6 +1378,7 @@ header .list {
 
     .first-section {
         max-width: 100%;
+        padding: 112px 0;
     }
 
     .second-section {
@@ -1409,9 +1414,13 @@ header .list {
 
 
 
-@media (min-width:427px) and (max-width:768px) {
+@media (min-width:429px) and (max-width:768px) {
     .container {
         max-width: 582px;
+        }
+
+        .header-div{
+            min-width: 100%;
         }
 
     .header-ul-ll{
@@ -1430,7 +1439,7 @@ header .list {
     }
 
         .logo {
-            margin-right: 50%;
+            margin-right: auto;
         }
     
         
@@ -1444,7 +1453,7 @@ header .list {
 
 .first-section{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/bg_tablet.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -1569,7 +1578,7 @@ header .list {
 
 
 
-@media (max-width:428px) or (min-width:768px) {
+@media (max-width:428px) or (min-width:769px) {
     .div-tablet-version{
         position: absolute;
         width: 1px;
@@ -1586,7 +1595,7 @@ header .list {
 
 
 
-@media (min-width:768px){
+@media (min-width:769px){
     .header{
         height: 72px;
     }
@@ -1623,6 +1632,7 @@ header .list {
     }
 
     .first-section {
+        max-width: 1440px;
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
@@ -1661,7 +1671,7 @@ header .list {
 
 
 
-@media (min-width:768px) and (max-width:956px){
+@media (min-width:769px) and (max-width:956px){
     .form-message-footer{
         width: 180px;
     }
@@ -1673,6 +1683,9 @@ header .list {
 
 
 
-@media (max-width:1158px){
-
+@media (min-width:1158px) {
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 }
