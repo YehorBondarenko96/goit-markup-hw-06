@@ -988,10 +988,6 @@ header .list {
 
 
 @media (max-width:428px) {
-    .container {
-            max-width: 350px;
-        }
-
     .mobile-version {
         min-width: 100%;
         min-height: 100%;
@@ -1303,11 +1299,34 @@ header .list {
         max-height: 615px;
         height: 100%;
     }
+
+
+
+    .portfolio-l-list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .first-button {
+        flex-basis: calc((100% - 24px*2)/3);
+    }
+
+    .portfolio-ll-list{
+        flex-direction: column;
+    }
+
+    .item-portfolio-ll-list{
+        width: 100%;
+    }
 }
 
 
 
 @media (min-width:429px){
+    .container {
+            max-width: 350px;
+        }
+
     .for-mobile-version {
             position: absolute;
             width: 1px;
@@ -1340,28 +1359,28 @@ header .list {
         width: 34%;
         }
         
-                .header-ul-l {
-                    position: relative;
-                }
+        .header-ul-l {
+            position: relative;
+        }
         
-                .header-ul-l>li:first-child {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    transform: translateX(-30%);
-                }
+        .header-ul-l>li:first-child {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translateX(-30%);
+        }
         
-                .header-ul-l>li {
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-60%);
-                }
+        .header-ul-l>li {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-60%);
+        }
         
-                .header-ul-l>li:last-child {
-                    position: absolute;
-                    left: 100%;
-                    transform: translateX(-70%);
-                }      
+        .header-ul-l>li:last-child {
+            position: absolute;
+            left: 100%;
+            transform: translateX(-70%);
+        }      
                 
 
         .list-icons-llll-section {
