@@ -94,18 +94,6 @@ button {
     padding-right: 15px;
 }
 
-@media (min-width:768px){
-    .container{
-        max-width: 766px;
-    }
-}
-
-@media (min-width:1158px){
-    .container{
-        max-width: 1158px;
-    }
-}
-
 .header {
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -385,22 +373,10 @@ button {
 
 
 .second-section {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
-.background-icons-ll-section {
-    position: relative;
-    max-width: 264px;
-    width: 100%;
-    height: 112px;
-    border-radius: 4px;
-    background-color: #F4F4FD;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+@media (max-width:1158px){
 .background-icons-ll-section {
     position: absolute;
     width: 1px;
@@ -413,15 +389,14 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-.l-list-ll-section {
-    margin-bottom: 96px;
 }
 
-.item-l-list-ll-section {
+.item-l-list-ll-section{
     width: 100%;
+}
+
+.item-l-list-ll-section:not(:last-child) {
     margin-bottom: 72px;
-    /*width: calc((100% - 72px)/4);*/
 }
 
 .ll-list-ll-section>li {
@@ -430,9 +405,6 @@ button {
 
 .second-section-titles {
     color: var(--second-section-titles);
-    /*font-size: 20px;
-    text-align: left;
-    font-weight: 500;*/
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
@@ -454,7 +426,7 @@ button {
 }
 
 
-
+@media (max-width:1158px){
 .third-section {
     position: absolute;
     width: 1px;
@@ -467,11 +439,6 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-
-
-.third-section {
-    padding-bottom: 120px;
 }
 
 .tytles-h-ll {
@@ -487,20 +454,9 @@ button {
     margin-right: auto;
 }
 
-.l-list-lll-section {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-}
 
-.list-l-list-lll-section {
-    width: calc((100% - 48px)/3);
-}
 
-.img-lll-section{
-    object-fit: contain;
-    width:100%;
-}
+
 
 .fourth-section {
     background-color: var(--main-background-first);
@@ -555,7 +511,6 @@ button {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    /*width: calc((100% - 72px)/4);*/
     margin: 0 auto;
     width: 264px;
 }
@@ -582,27 +537,12 @@ button {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
 .img-fourth-section {
     margin: 0 auto;
 }
 
 
 
-/*.fifth-section {
-    padding: 120px 0;
-}*/
-
-/*.list-icons-fifth-section {
-    gap: 24px;
-}*/
 
 .fifth-section {
     padding: 96px 0;
@@ -619,9 +559,7 @@ button {
     height: 88px;
 }
 
-/*.background-icons-fifth-section {
-    width: calc((100% - 24px*5)/6);
-}*/
+
 
 .link-icons-fifth-section {
     width: 100%;
@@ -828,6 +766,7 @@ button {
 
 .backdrop {
     background-color: rgba(46, 47, 66, 0.40);
+    z-index: 9999;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -849,13 +788,20 @@ button {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     background: #fcfcfc;
-    width: 408px;
+    max-width: 392px;
+    width: 100%;
+    max-height: 615px;
+    height: 100%;
     min-height: 584px;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window {
+    
 }
 
 .modal-close {
@@ -1057,6 +1003,9 @@ button {
 
 
 
+
+
+
 .first-section-portfolio {
     padding: 96px 0 120px 0;
 }
@@ -1213,12 +1162,7 @@ button {
 
 
 
-    .modal-window {
-        max-width: 392px;
-        width: 100%;
-        max-height: 615px;
-        height: 100%;
-    }
+    
 
 
 
@@ -1248,6 +1192,10 @@ button {
 
 
 @media (min-width:768px){
+    .container {
+        max-width: 766px;
+    }
+
     .container-ll{
         max-width: 582px;
         padding: 0 15px;
@@ -1298,18 +1246,18 @@ button {
                 overflow: hidden;
         }
 
-        .modal-close{
+        .close-menu {
             display: none;
             position: absolute;
-                width: 1px;
-                height: 1px;
-                margin: -1px;
-                border: 0;
-                padding: 0;
-                white-space: nowrap;
-                clip-path: inset(100%);
-                clip: rect(0 0 0 0);
-                overflow: hidden;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
         }
 
         .list-icons-mobile-menu{
@@ -1414,21 +1362,6 @@ button {
 
         
 
-        
-        
-        
-                
-
-        
-        
-    
-        
-        
-        
-        
-        
-        
-        
         .first-section {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
@@ -1470,8 +1403,6 @@ button {
         }
         
         
-        
-
         .l-list-llll-section {
             display: flex;
             flex-wrap: wrap;
@@ -1559,43 +1490,39 @@ button {
 
 
 @media (min-width:1158px){
+    .container {
+        max-width: 1158px;
+    }
+
     .header{
         height: 72px;
     }
 
-    .header-div{
-        align-items: center;
-        max-width: 1158px;
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        height: 100%;
-    }
-
-    .menu-header {
-        top: 50%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        }
-    
-        
-
     .logo{
-        margin-right: 0;
+        margin-right: 76px;
     }
 
-    .header-ul-l>li {
-        left: 35%;
-        transform: translateX(-60%);
+    .mobile-version{
+        width: 100%;
     }
-    
-    .header-ul-l>li:last-child {
-        left: 67%;
-        transform: translateX(-70%);
+
+
+    .header-ul-ll{
+        margin-left: auto;
+        margin-right: 0;
+        flex-direction: row-reverse;
+        gap: 40px;
     }
+
+    .list-contacts-header{
+        font-size: 16px;
+        line-height: 1,5;
+        letter-spacing: 0.32px;
+        width: 151px;
+    }
+
 
     .first-section {
-        max-width: 1440px;
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
@@ -1610,9 +1537,105 @@ button {
             }
         }
 
-    .all-version{
+    .first-section-button{
+        margin-top: 48px;
+    }
+
+
+
+    .second-section{
+        margin: 120px 0;
+        padding: 0;
+    }
+
+    .l-list-ll-section{
+        flex-wrap: nowrap;
+    }
+
+    .background-icons-ll-section {
+        position: relative;
+        max-width: 264px;
+        width: 100%;
+        height: 112px;
+        border-radius: 4px;
+        background-color: #F4F4FD;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-l-list-ll-section{
+        width: calc((100% - 72px)/4);
+        margin: 0;
+    }
+
+    .item-l-list-ll-section:not(:last-child){
+        margin: 0;
+    }
+
+    .second-section-titles{
+        font-size: 20px;
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+    }
+
+
+
+    .third-section {
+        margin: 120px 0;
+    }
+    
+    
+    .l-list-lll-section {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+    
+    .list-l-list-lll-section {
+        width: calc((100% - 48px)/3);
+    }
+    
+    .img-lll-section {
+        object-fit: contain;
         width: 100%;
     }
+
+
+
+    .fourth-section {
+        padding: 120px 0;
+    }
+
+    .l-list-llll-section{
+        flex-wrap: nowrap;
+    }
+
+    .list-fourth-section{
+        width: calc((100% - 72px)/4);
+    }
+
+
+
+    .fifth-section {
+        padding: 120px 0;
+    }
+    
+    .list-icons-fifth-section{
+        flex-wrap: nowrap;
+    }
+    
+    .list-icons-fifth-section {
+        gap: 24px;
+    }
+
+    .background-icons-fifth-section {
+        width: calc((100% - 24px*5)/6);
+    }
+
+
 
     .logo-p-social-media{
         justify-content: space-around;
@@ -1635,21 +1658,4 @@ button {
         max-width: 1440px;
         margin: 0 auto;
     }
-}
-
-.current {
-    position: relative;
-    color: #404BBF;
-    bottom: -1px;
-}
-
-.current::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background: #404BBF;
-    left: 0;
-    bottom: -1px;
 }
