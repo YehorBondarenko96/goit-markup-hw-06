@@ -1608,7 +1608,7 @@ button {
         margin-left:80px;
     }
 
-    .body {
+    body {
         max-width: 1440px;
         margin: 0 auto;
     }
@@ -1628,6 +1628,6 @@ button {
     }
 
     .item-portfolio-ll-list {
-    width: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
 }
 }
